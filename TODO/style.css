@@ -1,0 +1,120 @@
+body {
+    
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    
+        background: linear-gradient(135deg, #ff6b6b, #f8a5a5);
+      
+      
+      li {
+        background-image: linear-gradient(45deg, #f06, #f3a);
+      }
+      
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #task-container {
+    display: flex;
+    margin: 10px 0;
+  }
+  
+  #new-task {
+    flex: 1;
+    padding: 8px;
+  }
+  
+  #add-task {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+      
+
+    
+        /* Existing styles */
+        /* ... */
+      
+        transition: background-color 0.3s ease;
+      
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  
+  button {
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  #delete-all {
+    margin-top: 10px;
+  }
+  
+  button {
+    /* Existing styles */
+    /* ... */
+    border-radius: 50%;
+  }
+  
+  /* Add custom fonts */
+  @import url('https://fonts.googleapis.com/css?family=Poppins');
+  
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
+    /* ... */
+  }
+  
+  /* Use icons in your buttons */
+  button::before {
+    content: '\2713'; /* Checkmark icon for completing tasks */
+    margin-right: 5px;
+  }
+  
+  button.edit::before {
+    content: '\270E'; /* Pencil icon for editing tasks */
+  }
+  
+  button.delete::before {
+    content: '\2715'; /* Multiplication X icon for deleting tasks */
+  }
+  button:hover {
+    background-color: #FF5733;
+    transform: scale(1.1);
+  }
+  
+  li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
